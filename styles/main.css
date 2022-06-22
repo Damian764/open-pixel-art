@@ -157,3 +157,18 @@ p code {
 .hidden {
   display: none;
 }
+.custom-cursor {
+    --cursor-size: 5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: var(--cursor-size);
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    border: 1px solid black;
+    box-shadow: 0 0 30px rgb(0 0 0 / 80%);
+    backdrop-filter: invert(1);
+    display: none;
+}
+.custom-cursor.active {
+  display: block;
+}
